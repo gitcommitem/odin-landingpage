@@ -7,7 +7,7 @@ html{
     color: white;
 }
 
-.learnmore h2, blockquote, .quote p{
+.learnmore h2, blockquote, figcaption{
     color: black;
 }
 
@@ -38,7 +38,7 @@ a{
     text-decoration: none;
 }
 
-.hero p, a{
+.hero p, a, figcaption{
     font-size: 1.15rem;
 }
 
@@ -50,7 +50,7 @@ p{
     opacity: 0.8;
 }
 
-header,ul,body,.hero,.container,.lastcall,footer,.container,.item,.quote{
+header,ul,body,.hero,.container,.lastcall,footer,.container,.item,.quote,.qcontainer{
     display: flex;
 }
 
@@ -140,10 +140,15 @@ button{
 }
 
 .quote{
-    flex-direction: column;
-    background-color: rgb(224, 224, 224);
-    height: 40vh;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    height: 50vh;
+}
+
+.qcontainer{
+    flex-direction: column;
+    width: 70ch;
 }
 
 .quote p{
@@ -152,10 +157,14 @@ button{
 }
 
 blockquote{
-    margin: 0;
+    margin: 0 0 1rem 0;
     font-weight: 300; 
     font-style: italic;
+}
 
+figcaption{
+    margin-left: auto;
+    font-weight: bold;
 }
 
 .lastcall{
