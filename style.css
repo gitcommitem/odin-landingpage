@@ -3,6 +3,14 @@ html{
     box-sizing: border-box;
 }
 
+*{
+    color: white;
+}
+
+.learnmore h2, blockquote, .quote p{
+    color: black;
+}
+
 body{
     margin: 0;
     box-sizing: inherit;
@@ -30,17 +38,22 @@ a{
     text-decoration: none;
 }
 
+.hero p, a{
+    font-size: 1.15rem;
+}
+
+h2, blockquote{
+    font-size: 2.3rem;
+}
+
 p{
     opacity: 0.8;
 }
 
-header,ul,body,.hero,.container,.lastcall,footer,.container,.item{
+header,ul,body,.hero,.container,.lastcall,footer,.container,.item,.quote{
     display: flex;
 }
 
-a,header,footer,.hero,button,.lastcall{
-    color:white;
-}
 
 ul{
     list-style: none;
@@ -86,7 +99,7 @@ header{
 button{
     background: teal;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
 }
 
 .hero{
@@ -122,35 +135,42 @@ button{
 
 .itemfooter{
     text-align: center;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
 }
 
 .quote{
-    background-color: lightgray;
+    flex-direction: column;
+    background-color: rgb(224, 224, 224);
+    height: 40vh;
+    justify-content: center;
+}
+
+.quote p{
+    margin-left: auto;
+    font-weight: bold;
 }
 
 blockquote{
-    font-size: 2.3rem;
     margin: 0;
+    font-weight: 300; 
+    font-style: italic;
+
 }
 
 .lastcall{
     background-color: chocolate;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
     align-items: center;
+    justify-content: space-between;
 }
 
-.lastcall button{
-    margin-left: auto;
+h3, .lastcall p{
+    margin: 0rem;
 }
 
 .lastcall, button, .item{
     border-radius: 0.5rem;
-}
-
-footer p{
-    font-size: 0.7em;
 }
 
 footer{
