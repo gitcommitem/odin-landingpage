@@ -4,21 +4,124 @@ html{
 }
 
 body{
+    margin: 0;
     box-sizing: inherit;
     font-family: 'Barlow', sans-serif;
     flex-direction: column;
+}
+
+.pagewrapper{
+    overflow-x: hidden;
+}
+
+.page{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.full{
+    padding-left: 100vw;
+    margin-left: -100vw;
+    padding-right: 100vw;
+    margin-right: -100vw;
 }
 
 a{
     text-decoration: none;
 }
 
+p{
+    opacity: 0.8;
+}
+
 header,ul,body,.hero,.container,.lastcall,footer{
     display: flex;
+}
+
+a,header,footer,.hero,button,.lastcall{
+    color:white;
 }
 
 ul{
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+header{
+    align-items: baseline;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.hero,header,footer{
+    background: chocolate;
+}
+
+.hero,.learnmore,.quote,.lastcall{
+    margin-bottom: 3rem;
+}
+
+button{
+    background: teal;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.hero{
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hero div{
+    width: 45ch;
+}
+.hero img{
+    width: 50%;
+}
+
+.quote{
+    background-color: lightgray;
+}
+
+blockquote{
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.lastcall{
+    flex: 1 1 auto;
+    background-color: chocolate;
+    padding: 1rem 4rem;
+    align-items: center;
+}
+
+.lastcall button{
+    margin-left: auto;
+}
+
+.lastcall, button{
+    border-radius: 0.5rem;
+}
+
+footer p{
+    font-size: 0.7em;
+}
+
+footer{
+    align-items: center;
+    justify-content: space-between;
 }
